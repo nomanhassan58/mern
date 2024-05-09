@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website Layout using Grid</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-sans">
+
+    <header class="bg-blue-700 text-white py-6"> 
+        <!-- py is padding -->
+        <h1 class="text-center">Leafly</h1>
+    </header>
+
+    <nav class="bg-teal-600 text-grey py-4">
+        <ul class="flex justify-center">
+            <li class="mr-6"><a href="#" class="hover:underline">Facebook</a></li>
+            <li class="mr-6"><a href="#" class="hover:underline">Instagram</a></li>
+            <li><a href="#" class="hover:underline">Reddit</a></li>
+            <!-- mr is margin right and mx is margin left -->
+        </ul>
+    </nav>
+      <!-- rounded lg is border radius text-lg is font size mt is margin top -->
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 p-8">
+        <div class="main bg-green-300 border border-gray-300 rounded-lg p-6">
+            <h2 class="text-lg font-semibold">Dry leaves</h2>
+            <p class="mt-4">Dry leaves, once vibrant and green, transform into brittle remnants of the season's past. Crunching underfoot, they evoke nostalgia, signaling nature's cycle of renewal and transition.</p>
+        </div>
+
+        <div class="side-panel bg-green-300 border border-gray-300 rounded-lg p-6 overflow-y-auto max-h-72">
+            <h2 class="text-lg font-semibold">Wet leaves</h2>
+            <p class="mt-4">Wet leaves, drenched in rain or morning dew, present a different spectacle altogether. Their colors deepen, saturated with moisture, revealing intricate veins and textures. As raindrops cling to their surfaces, they glisten like jewels under the sun's rays, casting a mesmerizing sheen. While wet leaves may pose challenges, such as making pathways slippery or causing clogged drains, they also offer benefits. As they decompose, they provide essential nutrients to the soil, enriching it for future growth. Additionally, wet leaves create habitats for small creatures like insects and amphibians, fostering biodiversity. In urban environments, wet leaves can create a striking contrast against concrete pavements or metal surfaces, adding a touch of natural beauty to the urban landscape. Despite their temporary inconvenience, wet leaves remind us of the intricate relationship between water, foliage, and the ecosystem, highlighting the interconnectedness of all living beings with their environment.</p>
+        </div>
+
+        <div class="main bg-green-300 border border-gray-300 rounded-lg p-6">
+            <h2 class="text-lg font-semibold">Hybrid leaves</h2>
+            <p class="mt-4">Hybrid leaves blend characteristics from different plant species, showcasing a fascinating array of shapes, sizes, and colors. These unique foliage creations reflect nature's adaptability and the ingenuity of hybridization techniques.</p>
+        </div>
+    </div>
+
+    <footer class="bg-gray-200 text-black py-6 text-center">
+        <p>Know about your leaves !</p>
+    </footer>
+
+</body>
+
+</html>
